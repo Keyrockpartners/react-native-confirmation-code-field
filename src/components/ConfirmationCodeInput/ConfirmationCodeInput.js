@@ -6,7 +6,7 @@ import { concatStyles } from '../../styles';
 
 import Cursor from '../Cursor';
 import Cell from '../Cell';
-import TextInputCustom from '../TextInputCustom';
+//import TextInputCustom from '../TextInputCustom';
 
 import { getCellStyle, getContainerStyle, styles } from './styles';
 
@@ -247,7 +247,7 @@ class ConfirmationCodeInput extends PureComponent<Props, State> {
 
     return (
       // $FlowFixMe - onClick strange prop
-      <TextInputCustom
+      <TextInputNative
         ref={this._input}
         maxLength={codeLength}
         {...inputProps}
